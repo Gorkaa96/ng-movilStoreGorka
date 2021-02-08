@@ -1,0 +1,26 @@
+<figure class="figure">
+  <figcaption class="figure-caption">
+    <h4>Name: {{product.name}}</h4>
+    <h4>Company: {{product.company}}</h4>
+    <h5>Price: {{product.price | currency:'EUR'}}</h5>
+    <h5>Inches: {{product.inches}}"</h5>
+    <h5>Colors: {{product.colors}}</h5>
+  </figcaption>
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <button class="btn btn-outline-secondary mr-3"
+              style="width:80px"
+              (click)="onBack()">
+        <i class="fa fa-chevron-left"></i> Back
+      </button>
+      <button class="btn btn-outline-primary"
+              style="width:80px"
+              (click)="goEdit()">
+        Edit
+      </button>
+    </div>
+  </div>
+</figure>
+<img src="{{product.image}}" class="figure-img img-fluid rounded">
+
+

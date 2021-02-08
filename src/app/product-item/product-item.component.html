@@ -1,0 +1,11 @@
+<figure class="figure border border-primary shadow p-3 mb-5 bg-white rounded" [routerLink]="['/products', product.id]">
+  <img src="{{product.image}}" class="figure-img img-fluid rounded">
+  <figcaption class="figure-caption">
+    <h5><a class="text-primary">{{product.company}} {{product.name}}</a></h5>
+    <p>Inches: {{product.inches}}"</p>
+    
+    
+    <p class="list-group-item-secondary border border-primary rounded"><strong>Colors:</strong><br>{{product.colors}}</p>
+    <h5 style="text-align: center;"><span>{{ product.price | myCurrency  }}</span></h5>
+  </figcaption>
+</figure>

@@ -1,0 +1,11 @@
+<div class="jumbotron jumbotron-fluid rou">
+  <div class="container">
+    <h1 class="display-4">Mobile Store <img src="../../assets/images/movil.png" class="figure-img img-fluid rounded"></h1>
+    <p class="lead">The best mobiles at the best price</p>
+  </div>
+</div>
+<div class="row">
+  <div *ngFor="let product of products" class="col-12 col-md-6  col-lg-4">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+</div>
