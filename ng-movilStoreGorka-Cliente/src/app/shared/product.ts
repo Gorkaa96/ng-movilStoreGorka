@@ -6,5 +6,4 @@ export interface Product {
   inches: number;
   colors: string[];
   image: '';
-  image265x265: '';
 }
