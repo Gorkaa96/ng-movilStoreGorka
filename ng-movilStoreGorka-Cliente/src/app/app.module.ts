@@ -4,7 +4,7 @@ import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
 import {LOCALE_ID} from '@angular/core';
 
 // Import for loading & configuring in-memory web api
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -40,7 +40,7 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    InMemoryWebApiModule.forRoot(ProductData),
+    //InMemoryWebApiModule.forRoot(ProductData),
     SharedModule
   ],
   providers: [ProductService],

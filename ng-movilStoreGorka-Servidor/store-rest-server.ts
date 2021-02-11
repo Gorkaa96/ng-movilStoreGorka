@@ -17,7 +17,7 @@ class Product {
 const products: Product[] = [
   new Product(
     1,
-    "Mi 10 Lite",
+    "Mi 10",
     "Xiaomi",
     324.03,
     6.57,

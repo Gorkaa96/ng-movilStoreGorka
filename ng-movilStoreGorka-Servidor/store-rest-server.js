@@ -15,7 +15,7 @@ var Product = /** @class */ (function () {
     return Product;
 }());
 var products = [
-    new Product(1, "Mi 10 Lite", "Xiaomi", 324.03, 6.57, ["White", "Black"], "https://thumb.pccomponentes.com/w-530-530/articles/30/300205/1390-xiaomi-mi-10-lite-5g-6-64gb-blanco-libre.jpg"),
+    new Product(1, "Mi 10", "Xiaomi", 324.03, 6.57, ["White", "Black"], "https://thumb.pccomponentes.com/w-530-530/articles/30/300205/1390-xiaomi-mi-10-lite-5g-6-64gb-blanco-libre.jpg"),
     new Product(2, "K51S", "LG", 148.99, 6.55, ["Blue", "Black"], "https://thumb.pccomponentes.com/w-530-530/articles/29/298691/lg-k51s-3-64gb-dual-sim-titan-libre.jpg"),
     new Product(3, "Galaxi S21", "Samsung", 1309, 6.8, ["White", "Black"], "https://thumb.pccomponentes.com/w-530-530/articles/34/348326/1623-samsung-galaxy-s21-ultra-5g-256gb-plata-libre.jpg"),
     new Product(4, "iPhone 12", "Apple", 959, 6.1, ["Red", "Black"], "https://thumb.pccomponentes.com/w-530-530/articles/32/328931/1319-apple-iphone-12-128gb-product-rojo-libre.jpg"),
@@ -26,7 +26,7 @@ function getProducts() {
     return products;
 }
 app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:4200"); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "http://localhost:4200");
     res.header("Access-Control-Allow-Methods", "POST, PUT, GET, DELETE");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
